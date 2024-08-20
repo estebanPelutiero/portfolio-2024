@@ -160,7 +160,7 @@
 }
 .gslide-image img.dragging {
   cursor: -webkit-grabbing !important;
-  cursor: grabbing !important;
+  cursor: auto !important;
   -webkit-transition: none;
   transition: none;
 }

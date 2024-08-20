@@ -152,10 +152,14 @@
         </div>
       </div>
       <!-- end section hero -->
-      
+
       <!-- about section -->
       <div id="aboutsection" class="sectionblock">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220" class="wave">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 220"
+          class="wave"
+        >
           <path
             fill="#ffdb67"
             fill-opacity="1"
@@ -172,11 +176,11 @@
             <div class="col-lg-8 pl-lg-5 text-center text-lg-left">
               <div class="infoabout">
                 <p class="infoabout__title">
-                  Passionate and Creative Front-End Developer with +2 years expertise in
-                  HTML, CSS, JavaScript, Wordpress, Figma, React, Tailwind and
-                  more. Skilled in creating responsive, dynamic websites and
-                  optimizing user experiences. Collaborative team player in
-                  developing high-quality web applications.
+                  Passionate and Creative Front-End Developer with +2 years
+                  expertise in HTML, CSS, JavaScript, Wordpress, Figma, React,
+                  Tailwind and more. Skilled in creating responsive, dynamic
+                  websites and optimizing user experiences. Collaborative team
+                  player in developing high-quality web applications.
                 </p>
                 <div class="row text-center text-lg-left">
                   <div class="col-lg-6">
@@ -217,8 +221,8 @@
                             target="_blank"
                             rel="noopener noreferer"
                             class="mt-4 mb-2 d-block infoabout__title"
-                            >
-                            <img src="./asset/social/github.svg" alt="">
+                          >
+                            <img src="./asset/social/github.svg" alt="" />
                           </a>
                         </div>
                       </li>
@@ -390,130 +394,221 @@
                 </ul>
               </div>
               <!-- end filter portfolio -->
-               
+
               <div id="porfoliowarp" class="grid-gutter-md grid-col-3">
-                <!--  PORFOLIO ITEM -->
+                <!--  PORFOLIO ITEM 1-->
                 <div class="porfoliowarp__item" data-groups='["html"]'>
-                  <a
-                    class="porfoliowarp__portolink glightbox"
-                    data-glightbox="type: image"
-                    href="./asset/portfolio/keep.png"
+                  <div class="porfoliowarp__overlay"></div>
+                  <!-- Nuevo elemento de overlay -->
+                  <div
+                    class="porfoliowarp__content"
+                    style="
+                      background: url(./asset/portfolio/keep.png) no-repeat top;
+                      background-position: top;
+                      background-size: cover;
+                    "
                   >
-                    <i class="fa-solid fa-circle-plus"></i>
-                    <div
-                      class="porfoliowarp__content"
-                      style="
-                        background: url(./asset/portfolio/keep.png) no-repeat
-                          center;
-                        background-position: center;
-                        background-size: cover;
-                      "
-                    ></div>
-                  </a>
+                    <div class="portfoliowarp__anchors">
+                      <a
+                        class="porfoliowarp__portolink"
+                        href="https://kmoving.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Go to web"
+                      >
+                        <img
+                          class="open"
+                          src="./asset/social/open.svg"
+                          alt="View page"
+                        />
+                      </a>
+
+                      <a
+                        class="porfoliowarp__portolink"
+                        href="https://github.com/estebanPelutiero/keep-moving"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Code"
+                      >
+                        <img
+                          class="git"
+                          src="./asset/social/github.svg"
+                          alt="Github"
+                        />
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <!-- END PORTFOLIO ITEM -->
-                <!--  PORFOLIO ITEM -->
+
+                <!--  PORFOLIO ITEM 2-->
                 <div class="porfoliowarp__item" data-groups='["react"]'>
-                  <a
-                    class="porfoliowarp__portolink glightbox"
-                    data-glightbox="type: image"
-                    href="./asset/napoles.png"
+                  <div class="porfoliowarp__overlay"></div>
+                  <!-- Nuevo elemento de overlay -->
+                  <div
+                    class="porfoliowarp__content"
+                    style="
+                      background: url(./asset/portfolio/napoles.png) no-repeat top;
+                      background-position: top;
+                      background-size: cover;
+                    "
                   >
-                    <i class="fa-solid fa-circle-plus"></i>
-                    <div
-                      class="porfoliowarp__content"
-                      style="
-                        background: url(./asset/portfolio/2.jpg) no-repeat
-                          center;
-                        background-position: center;
-                        background-size: cover;
-                      "
-                    ></div>
-                  </a>
+                    <div class="portfoliowarp__anchors">
+                      <a
+                        class="porfoliowarp__portolink"
+                        href="https://www.estilonapoles.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          class="open"
+                          src="./asset/social/open.svg"
+                          alt="View page"
+                        />
+                      </a>
+                      <a
+                        class="porfoliowarp__portolink"
+                        href="https://github.com/estebanPelutiero/estilo-napoles-landing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          class="git"
+                          src="./asset/social/github.svg"
+                          alt="Github"
+                        />
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <!-- END PORTFOLIO ITEM -->
-                <!--  PORFOLIO ITEM VIDEO-->
-                <!-- <div class="porfoliowarp__item" data-groups='["web"]'>
-                  <a
-                    class="porfoliowarp__portolink glightboxvideo"
-                    data-glightbox="type: video"
-                    href="https://www.youtube.com/watch?v=mqy98hcMV9w"
-                  >
-                    <i class="fa-solid fa-circle-plus"></i>
-                    <div
-                      class="porfoliowarp__content"
-                      style="
-                        background: url(./asset/portfolio/3.jpg) no-repeat
-                          center;
-                        background-position: center;
-                        background-size: cover;
-                      "
-                    ></div>
-                  </a>
-                </div> -->
-                <!-- END PORTFOLIO ITEM -->
-                <!--  PORFOLIO ITEM -->
+
+                <!--  PORFOLIO ITEM 3-->
                 <div class="porfoliowarp__item" data-groups='["react"]'>
-                  <a
-                    class="porfoliowarp__portolink glightbox"
-                    data-glightbox="type: image"
-                    href="./asset/oss.png"
+                  <div class="porfoliowarp__overlay"></div>
+                  <!-- Nuevo elemento de overlay -->
+                  <div
+                    class="porfoliowarp__content"
+                    style="
+                      background: url(./asset/portfolio/oss.png) no-repeat top;
+                      background-position: top;
+                      background-size: cover;
+                    "
                   >
-                    <i class="fa-solid fa-circle-plus"></i>
-                    <div
-                      class="porfoliowarp__content"
-                      style="
-                        background: url(./asset/portfolio/4.jpg) no-repeat
-                          center;
-                        background-position: center;
-                        background-size: cover;
-                      "
-                    ></div>
-                  </a>
+                    <div class="portfoliowarp__anchors">
+                      <a
+                        class="porfoliowarp__portolink"
+                        href="https://osswebstudio.tech/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          class="open"
+                          src="./asset/social/open.svg"
+                          alt="View page"
+                        />
+                      </a>
+                      <a
+                        class="porfoliowarp__portolink"
+                        href="https://github.com/estebanPelutiero/oss-web-studio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          class="git"
+                          src="./asset/social/github.svg"
+                          alt="Github"
+                        />
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <!-- END PORTFOLIO ITEM -->
-                <!--  PORFOLIO ITEM -->
-                <div class="porfoliowarp__item" data-groups='["web"]'>
-                  <a
-                    class="porfoliowarp__portolink glightbox"
-                    data-glightbox="type: image"
-                    href="./asset/portfolio/5.jpg"
+
+                <!--  PORFOLIO ITEM 4-->
+                <div class="porfoliowarp__item" data-groups='["react"]'>
+                  <div class="porfoliowarp__overlay"></div>
+                  <!-- Nuevo elemento de overlay -->
+                  <div
+                    class="porfoliowarp__content"
+                    style="
+                      background: url(./asset/portfolio/cgarden.png) no-repeat top;
+                      background-position: top;
+                      background-size: cover;
+                    "
                   >
-                    <i class="fa-solid fa-circle-plus"></i>
-                    <div
-                      class="porfoliowarp__content"
-                      style="
-                        background: url(./asset/portfolio/5.jpg) no-repeat
-                          center;
-                        background-position: center;
-                        background-size: cover;
-                      "
-                    ></div>
-                  </a>
+                    <div class="portfoliowarp__anchors">
+                      <a
+                        class="porfoliowarp__portolink"
+                        href="https://cgarden.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          class="open"
+                          src="./asset/social/open.svg"
+                          alt="View page"
+                        />
+                      </a>
+                      <a
+                        class="porfoliowarp__portolink"
+                        href="https://github.com/estebanPelutiero/clean-and-garden"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          class="git"
+                          src="./asset/social/github.svg"
+                          alt="Github"
+                        />
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <!-- END PORTFOLIO ITEM -->
-                <!--  PORFOLIO ITEM -->
-                <div class="porfoliowarp__item" data-groups='["branding"]'>
-                  <a
-                    class="porfoliowarp__portolink glightbox"
-                    data-glightbox="type: image"
-                    href="./asset/portfolio/6.jpg"
+
+                <!--  PORFOLIO ITEM 5-->
+                <div class="porfoliowarp__item" data-groups='["react"]'>
+                  <div class="porfoliowarp__overlay"></div>
+                  <!-- Nuevo elemento de overlay -->
+                  <div
+                    class="porfoliowarp__content"
+                    style="
+                      background: url(./asset/portfolio/anne.png) no-repeat top;
+                      background-position: top;
+                      background-size: cover;
+                    "
                   >
-                    <i class="fa-solid fa-circle-plus"></i>
-                    <div
-                      class="porfoliowarp__content"
-                      style="
-                        background: url(./asset/portfolio/6.jpg) no-repeat
-                          center;
-                        background-position: center;
-                        background-size: cover;
-                      "
-                    ></div>
-                  </a>
+                    <div class="portfoliowarp__anchors">
+                      <a
+                        class="porfoliowarp__portolink"
+                        href="https://www.anne-carroll.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          class="open"
+                          src="./asset/social/open.svg"
+                          alt="View page"
+                        />
+                      </a>
+                      <a
+                        class="porfoliowarp__portolink"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          class="git"
+                          src="./asset/social/github.svg"
+                          alt="Github"
+                        />
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <!-- END PORTFOLIO ITEM -->
               </div>
-              <a href="#" class="btn linkbtn mt-5"> More Works </a>
             </div>
           </div>
         </div>

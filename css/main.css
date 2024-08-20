@@ -631,7 +631,7 @@ button {
 }
 
 .porfoliowarp__item {
-  cursor: pointer;
+  cursor: default;
   margin: 0;
   position: relative;
   float: right;
@@ -642,9 +642,11 @@ button {
 }
 
 .porfoliowarp__content {
+  box-shadow: 2px 2px 4px rgba(1, 1, 1, 0.1);
   border-radius: 5px;
   height: 350px;
   width: 100%;
+  position: relative; /* Asegúrate de que el contenido tenga una posición relativa */
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -652,35 +654,65 @@ button {
   transition: all 0.3s ease;
 }
 
-.porfoliowarp__item:hover .porfoliowarp__content {
-  background-color: #ddaa01;
-  opacity: 0.5;
-}
-
-.porfoliowarp__portolink i {
+.portfoliowarp__anchors {
   position: absolute;
-  z-index: 1;
-  color: #181715;
+  right: 8px; /* Posiciona los íconos hacia el lado derecho */
+  bottom: 8px;
+  transform: translateY(50%); /* Centra verticalmente en el contenedor */
+  display: flex;
+  flex-direction: column; /* Dispone los íconos verticalmente */
+  gap: 16px; /* Espacio entre los íconos */
+  padding: 6px;
   opacity: 0;
-  font-size: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  transition: all 0.3s;
+  transition: opacity 0.1s ease, transform 0.2s ease;
+  z-index: 2; /* Asegúrate de que esté sobre el overlay */
 }
 
-.porfoliowarp__item:hover i {
-  opacity: 1;
+.porfoliowarp__portolink {
+  display: flex; /* Usa flexbox para alinear los íconos en el centro */
+  align-items: center; /* Centra los íconos verticalmente dentro del contenedor de enlaces */
+  justify-content: center; /* Centra los íconos horizontalmente dentro del contenedor de enlaces */
+  width: auto; /* Ajusta el ancho a contenido */
+  padding: 12px 12px; /* Padding para crear el efecto de pastilla */
+  background-color: #ffffff; /* Fondo blanco para los enlaces */
+  border-radius: 20px; /* Bordes redondeados para el efecto de pastilla */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Caja de sombra para los íconos */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.porfoliowarp__portolink .git {
+  width: 22px;
+  height: 22px;
+}
+.porfoliowarp__portolink .open {
+  width: 20px;
+}
+
+.porfoliowarp__content:hover .portfoliowarp__anchors {
+  opacity: .9; /* Muestra el contenedor de íconos */
+  transform: translateY(0); /* Mueve el contenedor hacia arriba para hacerlo visible */
+}
+
+/* Estilo específico para dispositivos móviles */
+@media (max-width: 768px) { /* Cambia el tamaño según sea necesario */
+  .portfoliowarp__anchors {
+    opacity: 1; /* Siempre visible en móviles */
+    transform: translateY(0); /* Asegura que esté visible siempre */
+  }
+}
+
 
 #filterwrap {
   padding: 0;
   margin: 30px 0;
-  overflow-x: scroll;
+  overflow-x: auto;
+  scrollbar-width: none;
   display: flex;
   flex-wrap: nowrap;
+}
+
+#filterwrap::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento en navegadores WebKit */
 }
 
 #filterwrap li {
