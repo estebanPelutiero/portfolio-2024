@@ -642,7 +642,6 @@ button {
 }
 
 .porfoliowarp__content {
-  box-shadow: 2px 2px 4px rgba(1, 1, 1, 0.1);
   border-radius: 5px;
   height: 350px;
   width: 100%;
@@ -675,7 +674,7 @@ button {
   width: auto; /* Ajusta el ancho a contenido */
   padding: 12px 12px; /* Padding para crear el efecto de pastilla */
   background-color: #ffffff; /* Fondo blanco para los enlaces */
-  border-radius: 20px; /* Bordes redondeados para el efecto de pastilla */
+  border-radius: 100%; /* Bordes redondeados para el efecto de pastilla */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Caja de sombra para los íconos */
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -703,7 +702,7 @@ button {
 
 
 #filterwrap {
-  padding: 0;
+  padding: 20px 0;
   margin: 30px 0;
   overflow-x: auto;
   scrollbar-width: none;
@@ -725,12 +724,14 @@ button {
   border: 1px solid #181715;
   height: auto;
   white-space: nowrap; /* Evita el salto de línea */
+  box-shadow: 5px 5px #181715c5;
 }
 
 
 #filterwrap li.active {
   background: #181715;
   color: #ffffff;
+  box-shadow: 5px 5px #ddaa01;
 }
 /*
 * ----------------------------------------------------------------------------------------
