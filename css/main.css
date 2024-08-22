@@ -188,7 +188,7 @@ button {
 .preloader .preloader__img {
   display: inline-block;
   position: absolute;
-  width: 150px;
+  width: 200px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -201,14 +201,20 @@ button {
 */
 
 #headermain {
-  padding: 10px 0 10px;
+  padding: 10px 0;
   position: fixed;
   width: 100%;
   z-index: 3;
 }
 
-.headerwrap__logo img {
+.headerwrap__logo .logotipo {
+  padding: 10px 0;
+  color: #181715;
+  font-size: 20px;
+  text-shadow: 3px 3px #ddaa01;
+  font-weight: 600;
   width: 100px;
+  margin: 0;
 }
 
 /*
@@ -219,7 +225,6 @@ button {
 */
 /* Estilos generales del contenedor de la navbar */
 .navpage__wrap {
-  padding: 10px 0 0;
   margin: 0;
   display: flex;
   justify-content: end;
