@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Toastify CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css"
+    />
+
+    <!-- Toastify JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.js"></script>
+
     <!-- title -->
     <title>Esteban Pelutiero Portfolio 💼 | Frontend Developer</title>
     <!-- favicon -->
@@ -87,7 +96,7 @@
         </div>
       </div>
     </header>
-    <!-- end header -->
+
     <!-- mobile nav -->
     <div class="overlay">
       <div class="overlay__navigation">
@@ -100,7 +109,7 @@
         </ul>
       </div>
     </div>
-    <!-- end mobile nav -->
+
     <!-- PRELOADER -->
     <div class="preloader">
       <div class="preloader__img">
@@ -151,7 +160,6 @@
           </div>
         </div>
       </div>
-      <!-- end section hero -->
 
       <!-- about section -->
       <div id="aboutsection" class="sectionblock">
@@ -255,55 +263,10 @@
                 </div>
               </div>
             </div>
-            <!-- counters -->
-            <!-- <div class="col-lg-12 mt-5 mb-4 pt-5">
-              <div class="row">
-                <div class="col-lg-3">
-                  <div class="counterwrap">
-                    <p class="counterwrap__counternum">
-                      <span class="counterwrap__counter" data-Speed="5000"
-                        >20</span
-                      ><span class="icon">+</span>
-                    </p>
-                    <p>Projects completed</p>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="counterwrap">
-                    <p class="counterwrap__counternum">
-                      <span class="counterwrap__counter" data-Speed="5000"
-                        >30</span
-                      >
-                    </p>
-                    <p>Winning Awards</p>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="counterwrap">
-                    <p class="counterwrap__counternum">
-                      <span class="counterwrap__counter" data-Speed="5000"
-                        >30</span
-                      ><span class="icon">+</span>
-                    </p>
-                    <p>Happy Clients</p>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="counterwrap">
-                    <p class="counterwrap__counternum">
-                      <span class="counterwrap__counter" data-Speed="5000"
-                        >4</span
-                      >
-                    </p>
-                    <p>On Projects</p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
-      <!-- end about -->
+
       <!-- service section -->
       <div id="servicesection" class="sectionblock">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -375,7 +338,7 @@
           ></path>
         </svg>
       </div>
-      <!-- end service section -->
+
       <!-- portfolio section -->
       <div id="portfoliosection" class="sectionblock">
         <div class="container">
@@ -397,13 +360,14 @@
 
               <div id="porfoliowarp" class="grid-gutter-md grid-col-3">
                 <!--  PORFOLIO ITEM 1 GYM-->
-                <div class="porfoliowarp__item" data-groups='["html"]'>
+                <div class="porfoliowarp__item col-md-6" data-groups='["html"]'>
                   <div class="porfoliowarp__overlay"></div>
                   <!-- Nuevo elemento de overlay -->
                   <div
                     class="porfoliowarp__content"
                     style="
-                      background: url(./asset/portfolio/KeepMLogo.png) no-repeat top;
+                      background: url(./asset/portfolio/KeepMLogo.png) no-repeat
+                        top;
                       background-position: center;
                       background-size: 55%;
                     "
@@ -441,13 +405,14 @@
                 </div>
 
                 <!--  PORFOLIO ITEM 2 CARRAFFA-->
-                <div class="porfoliowarp__item" data-groups='["wordpress"]'>
+                <div class="porfoliowarp__item col-md-6" data-groups='["wordpress"]'>
                   <div class="porfoliowarp__overlay"></div>
                   <!-- Nuevo elemento de overlay -->
                   <div
                     class="porfoliowarp__content"
                     style="
-                      background: url(./asset/portfolio/carraffa.png) no-repeat top;
+                      background: url(./asset/portfolio/carraffa.png) no-repeat
+                        top;
                       background-position: center;
                       background-size: 100%;
                     "
@@ -471,13 +436,14 @@
                 </div>
 
                 <!--  PORFOLIO ITEM 3 NAPOLES-->
-                <div class="porfoliowarp__item" data-groups='["react"]'>
+                <div class="porfoliowarp__item col-md-6" data-groups='["react"]'>
                   <div class="porfoliowarp__overlay"></div>
                   <!-- Nuevo elemento de overlay -->
                   <div
                     class="porfoliowarp__content"
                     style="
-                      background: url(./asset/portfolio/logoNapo.svg) no-repeat center;
+                      background: url(./asset/portfolio/logoNapo.svg) no-repeat
+                        center;
                       background-position: center;
                       background-size: 70%;
                       object-fit: contain;
@@ -515,13 +481,14 @@
                 </div>
 
                 <!--  PORFOLIO ITEM 4 OSS-->
-                <div class="porfoliowarp__item" data-groups='["react"]'>
+                <div class="porfoliowarp__item col-md-6" data-groups='["react"]'>
                   <div class="porfoliowarp__overlay"></div>
                   <!-- Nuevo elemento de overlay -->
                   <div
                     class="porfoliowarp__content"
                     style="
-                      background: url(./asset/portfolio/oss.png) no-repeat center;
+                      background: url(./asset/portfolio/oss.png) no-repeat
+                        center;
                       background-position: center;
                       background-size: 80%;
                     "
@@ -558,13 +525,14 @@
                 </div>
 
                 <!--  PORFOLIO ITEM 5 CGARDEN-->
-                <div class="porfoliowarp__item" data-groups='["react"]'>
+                <div class="porfoliowarp__item col-md-6" data-groups='["react"]'>
                   <div class="porfoliowarp__overlay"></div>
                   <!-- Nuevo elemento de overlay -->
                   <div
                     class="porfoliowarp__content"
                     style="
-                      background: url(./asset/portfolio/cgardenLogo.svg) no-repeat center;
+                      background: url(./asset/portfolio/cgardenLogo.svg)
+                        no-repeat center;
                       background-position: center;
                       background-size: 65%;
                     "
@@ -601,13 +569,14 @@
                 </div>
 
                 <!--  PORFOLIO ITEM 6 ANNE CARROLL-->
-                <div class="porfoliowarp__item" data-groups='["react"]'>
+                <div class="porfoliowarp__item col-md-6" data-groups='["react"]'>
                   <div class="porfoliowarp__overlay"></div>
                   <!-- Nuevo elemento de overlay -->
                   <div
                     class="porfoliowarp__content"
                     style="
-                      background: url(./asset/portfolio/anneLogo.svg) no-repeat top;
+                      background: url(./asset/portfolio/anneLogo.svg) no-repeat
+                        top;
                       background-position: center;
                       background-size: 60%;
                     "
@@ -647,7 +616,7 @@
           </div>
         </div>
       </div>
-      <!-- end portfolio section -->
+
       <!-- contact section -->
       <div id="contactsection" class="sectionblock">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -661,41 +630,57 @@
           <div class="row">
             <div class="col-lg-6 pr-lg-5">
               <div class="contactdetail">
-                <h3 class="contactdetail__title mb-4">Let's get intouch</h3>
+                <h3 class="contactdetail__title mb-4">Let's get in touch</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                  itaque, eos a maxime numquam inventore officia quam.
+                  If you'd like to learn more about what I do or explore how we
+                  can work together, I'd love to hear from you! Feel free to
+                  send me a message.
                 </p>
+
                 <ul class="contactdetail__list">
                   <li>
                     <span class="contactdetail__span">
-                      30 Unkown Street, Harrmony Hills Bogor, 16610 Indonesia
+                      Based in Campana, Buenos Aires, Argentina 📍
                     </span>
                   </li>
                   <li>
-                    <span class="contactdetail__span"> +62 08989999 </span>
+                    <span class="contactdetail__span">
+                      <a
+                        href="https://wa.me/543489311605
+                    "
+                      >
+                        + 54 9 3489 311605
+                      </a>
+                    </span>
                   </li>
                   <li>
                     <span class="contactdetail__span">
-                      yourmail@yourdomain.com
+                      estebanpelutiero@gmail.com
                     </span>
                   </li>
                 </ul>
                 <ul class="contactdetail__sosmed">
                   <li>
-                    <a href="#">
-                      <i class="fa-brands fa-facebook"></i>
+                    <a
+                      href="https://github.com/estebanPelutiero"
+                      title="Github"
+                      target="_blank"
+                      rel="noopener noreferer"
+                      class="mb-2 d-block infoabout__title"
+                    >
+                      <img src="./asset/social/github.svg" alt="" />
                     </a>
                   </li>
+
                   <li>
-                    <a href="#">
-                      <i class="fa-brands fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-brands fa-github"></i>
-                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/estebanpelutiero/"
+                      title="LinkedIn"
+                      target="_blank"
+                      rel="noopener noreferer"
+                      class="mb-2 d-block infoabout__title"
+                      ><img src="./asset/social/linkedin.svg" alt="LinkedIn"
+                    /></a>
                   </li>
                 </ul>
               </div>
@@ -703,7 +688,12 @@
             <div class="col-lg-6">
               <div class="contactform">
                 <!-- form contact -->
-                <form action="#" id="formcontact" class="contactform">
+                <form
+                  action="https://formspree.io/f/xeojrnpv"
+                  method="POST"
+                  id="formcontact"
+                  class="contactform"
+                >
                   <!-- input contact wrap -->
                   <div class="contactform__form-group row">
                     <div class="col-lg-12 pt-4">
@@ -715,6 +705,7 @@
                         placeholder="Your name"
                         name="name"
                         data-name="name"
+                        required
                       />
                     </div>
                     <!-- input contact wrap -->
@@ -727,6 +718,7 @@
                         placeholder="Your email address"
                         name="email"
                         data-name="email"
+                        required
                       />
                     </div>
                     <!-- input contact wrap -->
@@ -740,6 +732,7 @@
                         placeholder="Your comment"
                         name="comment"
                         data-name="comment"
+                        required
                       ></textarea>
                       <button
                         id="submitbutton"
@@ -756,69 +749,117 @@
           </div>
         </div>
       </div>
-      <!-- end contact section -->
     </main>
-    <!-- end main wrap -->
+
     <!-- footer section -->
     <footer id="footerwrap" class="pt-4">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center footwrap">
-            <p><b>FREEMAN</b> <span class="years"> </span> BY RAMA HARDIAN</p>
+            <p>
+              <b>Esteban Pelutiero </b> <span class="years"> © </span> - Made
+              with 🧡 by me 🤓
+            </p>
           </div>
         </div>
       </div>
     </footer>
-    <!-- end footer section-->
-    <!-- keen slider -->
+
+    
+
+    <script>
+      document
+        .getElementById("formcontact")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent default form submission
+
+          var formData = new FormData(this);
+
+          fetch("https://formspree.io/f/xeojrnpv", {
+            method: "POST",
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              Toastify({
+                text: "Thank you for your message!",
+                duration: 3000,
+                gravity: "top", // top or bottom
+                position: "right", // left, center or right
+                backgroundColor: "#ddaa01", // Success color
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                  color: "#181715",
+                },
+              }).showToast();
+
+              // Optionally, you can reset the form
+              document.getElementById("formcontact").reset();
+            })
+            .catch((error) => {
+              Toastify({
+                text: "Oops! Something went wrong. Please try again.",
+                duration: 3000,
+                gravity: "top",
+                position: "right",
+                backgroundColor: "#f44336", // Error color
+                stopOnFocus: true,
+              }).showToast();
+            });
+        });
+    </script>
+
     <script>
       document.addEventListener("mousemove", movePupilas);
-document.addEventListener("touchmove", movePupilas);
+      document.addEventListener("touchmove", movePupilas);
 
-function movePupilas(event) {
-  // Si el evento es táctil, obtén la posición del primer toque
-  const isTouchEvent = event.type === "touchmove";
-  const clientX = isTouchEvent ? event.touches[0].clientX : event.clientX;
-  const clientY = isTouchEvent ? event.touches[0].clientY : event.clientY;
+      function movePupilas(event) {
+        // Si el evento es táctil, obtén la posición del primer toque
+        const isTouchEvent = event.type === "touchmove";
+        const clientX = isTouchEvent ? event.touches[0].clientX : event.clientX;
+        const clientY = isTouchEvent ? event.touches[0].clientY : event.clientY;
 
-  // Obtén todas las pupilas
-  const pupilas = document.querySelectorAll(".pupila");
+        // Obtén todas las pupilas
+        const pupilas = document.querySelectorAll(".pupila");
 
-  pupilas.forEach((pupila) => {
-    // Encuentra el ojo contenedor
-    const ojo = pupila.parentElement;
-    const rect = ojo.getBoundingClientRect();
-    const ojoX = rect.left + rect.width / 2;
-    const ojoY = rect.top + rect.height / 2;
+        pupilas.forEach((pupila) => {
+          // Encuentra el ojo contenedor
+          const ojo = pupila.parentElement;
+          const rect = ojo.getBoundingClientRect();
+          const ojoX = rect.left + rect.width / 2;
+          const ojoY = rect.top + rect.height / 2;
 
-    const mouseX = clientX;
-    const mouseY = clientY;
+          const mouseX = clientX;
+          const mouseY = clientY;
 
-    const deltaX = mouseX - ojoX;
-    const deltaY = mouseY - ojoY;
-    const angle = Math.atan2(deltaY, deltaX);
+          const deltaX = mouseX - ojoX;
+          const deltaY = mouseY - ojoY;
+          const angle = Math.atan2(deltaY, deltaX);
 
-    // Calcula el radio del ojo y de la pupila
-    const radioOjo = ojo.offsetWidth / 2;
-    const radioPupila = pupila.offsetWidth / 2;
+          // Calcula el radio del ojo y de la pupila
+          const radioOjo = ojo.offsetWidth / 2;
+          const radioPupila = pupila.offsetWidth / 2;
 
-    // Limita el movimiento de la pupila al interior del ojo
-    const radius = radioOjo - radioPupila;
+          // Limita el movimiento de la pupila al interior del ojo
+          const radius = radioOjo - radioPupila;
 
-    // Calcula la posición máxima permitida para la pupila dentro del ojo
-    const pupilaX = Math.min(
-      Math.max(Math.cos(angle) * radius, -radius),
-      radius
-    );
-    const pupilaY = Math.min(
-      Math.max(Math.sin(angle) * radius, -radius),
-      radius
-    );
+          // Calcula la posición máxima permitida para la pupila dentro del ojo
+          const pupilaX = Math.min(
+            Math.max(Math.cos(angle) * radius, -radius),
+            radius
+          );
+          const pupilaY = Math.min(
+            Math.max(Math.sin(angle) * radius, -radius),
+            radius
+          );
 
-    // Mueve la pupila dentro del ojo
-    pupila.style.transform = `translate(${pupilaX}px, ${pupilaY}px)`;
-  });
-}
+          // Mueve la pupila dentro del ojo
+          pupila.style.transform = `translate(${pupilaX}px, ${pupilaY}px)`;
+        });
+      }
     </script>
 
     <script>
@@ -840,6 +881,7 @@ function movePupilas(event) {
       });
     </script>
 
+    <!-- keen slider -->
     <script src="./javascript/vendor/keen-slider.js"></script>
     <!-- glightbox -->
     <script src="./javascript/vendor/glightbox.js"></script>

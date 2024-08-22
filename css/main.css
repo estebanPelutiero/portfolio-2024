@@ -321,106 +321,106 @@ button {
 
 /* Estilos para el overlay del menú */
 /* Estilos para el overlay del menú */
-.overlay {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  /* Cubrir toda la pantalla */
-  z-index: 2;
-  top: 0;
-  /* Mantener en la posición superior */
-  left: 0;
-  background: #ffdb67;
-  padding: 0;
-  /* Eliminar padding para centrar contenido */
-  border-bottom: 1px solid #ddaa01;
-  overflow: hidden;
-  /* Evitar que el contenido se desborde */
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  /* Transiciones para opacity y transform */
-  opacity: 0;
-  /* Iniciar como invisible */
-  transform: scale(0.9);
-  /* Escalar hacia abajo para el fade out */
-  display: none;
-  /* Asegurarse de que no esté en el flujo del documento cuando está oculto */
-  pointer-events: none;
-  /* Desactivar eventos de puntero cuando está oculto */
-}
-
-/* Mostrar el overlay cuando el menú está abierto en dispositivos móviles */
-.openmenu .overlay {
-  opacity: 1;
-  /* Hacerlo visible con fade in */
-  transform: scale(1);
-  /* Escalar a su tamaño original para el fade in */
-  display: flex;
-  /* Asegurarse de que se muestre como flexbox */
-  pointer-events: auto;
-  /* Activar eventos de puntero cuando está visible */
-}
-
-/* Mostrar el overlay solo en pantallas pequeñas */
-@media (max-width: 768px) {
   .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    /* Cubrir toda la pantalla */
+    z-index: 2;
+    top: 0;
+    /* Mantener en la posición superior */
+    left: 0;
+    background: #ffdb67;
+    padding: 0;
+    /* Eliminar padding para centrar contenido */
+    border-bottom: 1px solid #ddaa01;
+    overflow: hidden;
+    /* Evitar que el contenido se desborde */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Transiciones para opacity y transform */
+    opacity: 0;
+    /* Iniciar como invisible */
+    transform: scale(0.9);
+    /* Escalar hacia abajo para el fade out */
     display: none;
-    /* Ocultar por defecto en pantallas pequeñas */
+    /* Asegurarse de que no esté en el flujo del documento cuando está oculto */
+    pointer-events: none;
+    /* Desactivar eventos de puntero cuando está oculto */
   }
-}
 
-/* Estilos para la lista de navegación en el overlay */
-.overlay__listnav {
-  padding: 0;
-  /* Eliminar padding */
-  height: 100vh;
-  text-align: center;
-  /* Centrar el texto */
-  display: flex;
-  /* Usar flexbox */
-  flex-direction: column;
-  /* Alinear elementos en columna */
-  align-items: center;
-  /* Centrar los elementos en el eje X */
-  justify-content: center;
-}
+  /* Mostrar el overlay cuando el menú está abierto en dispositivos móviles */
+  .openmenu .overlay {
+    opacity: 1;
+    /* Hacerlo visible con fade in */
+    transform: scale(1);
+    /* Escalar a su tamaño original para el fade in */
+    display: flex;
+    /* Asegurarse de que se muestre como flexbox */
+    pointer-events: auto;
+    /* Activar eventos de puntero cuando está visible */
+  }
 
-/* Estilos para los elementos de la lista en el overlay */
-.overlay__listnav li {
-  list-style: none;
-  margin: 10px 0;
-  opacity: 0;
-  /* Iniciar como invisible */
-  transform: translateY(-10px);
-  /* Empezar un poco arriba */
-  transition: opacity 0.7s ease, transform 0.7s ease;
-  /* Transiciones para opacity y transform */
-}
+  /* Mostrar el overlay solo en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .overlay {
+      display: none;
+      /* Ocultar por defecto en pantallas pequeñas */
+    }
+  }
 
-/* Mostrar los elementos de la lista cuando el menú está abierto */
-.openmenu .overlay__listnav li {
-  opacity: 1;
-  /* Hacerlo visible */
-  transform: translateY(0);
-  /* Restablecer a la posición original */
-}
+  /* Estilos para la lista de navegación en el overlay */
+  .overlay__listnav {
+    padding: 0;
+    /* Eliminar padding */
+    height: 100vh;
+    text-align: center;
+    /* Centrar el texto */
+    display: flex;
+    /* Usar flexbox */
+    flex-direction: column;
+    /* Alinear elementos en columna */
+    align-items: center;
+    /* Centrar los elementos en el eje X */
+    justify-content: center;
+  }
 
-/* Estilos para los enlaces en la lista de navegación del overlay */
-.overlay__listnav li a {
-  font-size: 32px;
-  font-weight: 600;
-  position: relative;
-  color: #181715;
-  padding: 5px 10px;
-  border-radius: 50px;
-  transition: color 0.5s ease, background 0.5s ease;
-  /* Transiciones para color y background */
-}
+  /* Estilos para los elementos de la lista en el overlay */
+  .overlay__listnav li {
+    list-style: none;
+    margin: 10px 0;
+    opacity: 0;
+    /* Iniciar como invisible */
+    transform: translateY(-10px);
+    /* Empezar un poco arriba */
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    /* Transiciones para opacity y transform */
+  }
 
-/* Efecto al pasar el mouse sobre los enlaces en el overlay */
-.overlay__listnav li a:hover {
-  color: #ffffff;
-  background: #181715;
-}
+  /* Mostrar los elementos de la lista cuando el menú está abierto */
+  .openmenu .overlay__listnav li {
+    opacity: 1;
+    /* Hacerlo visible */
+    transform: translateY(0);
+    /* Restablecer a la posición original */
+  }
+
+  /* Estilos para los enlaces en la lista de navegación del overlay */
+  .overlay__listnav li a {
+    font-size: 32px;
+    font-weight: 600;
+    position: relative;
+    color: #181715;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: color 0.5s ease, background 0.5s ease;
+    /* Transiciones para color y background */
+  }
+
+  /* Efecto al pasar el mouse sobre los enlaces en el overlay */
+  .overlay__listnav li a:hover {
+    color: #ffffff;
+    background: #181715;
+  }
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -602,7 +602,7 @@ button {
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .infoabout__list2 {
     display: flex;
     justify-content: center;
@@ -729,6 +729,7 @@ button {
   box-shadow: 5px 5px #18171544;
   border: #18171565 1px solid;
 }
+
 .porfoliowarp__content:hover {
   box-shadow: 0px 0px #18171544;
 }
@@ -802,7 +803,7 @@ button {
 }
 
 /* Estilo específico para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   /* Cambia el tamaño según sea necesario */
   .portfoliowarp__anchors {
@@ -876,7 +877,11 @@ button {
   margin: 20px 0;
 }
 
-.contactdetail__span {
+.contactdetail__span{
+  font-weight: 600;
+}
+.contactdetail__span a{
+  color: #181715;
   font-weight: 600;
 }
 
@@ -890,13 +895,24 @@ button {
 
 .contactdetail__sosmed li {
   list-style: none;
-  margin: 10px 10px 10px;
+  margin: 10px;
   display: inline-block;
 }
 
 .contactdetail__sosmed li a {
   color: #181715;
   font-size: 30px;
+}
+
+.contactdetail__sosmed li a {
+  transition: transform 0.3s ease;
+  /* Smooth transition for transform */
+}
+
+/* Hover effect: scale up and move up slightly */
+.contactdetail__sosmed a:hover {
+  transform: scale(1.05) translateY(-3px);
+  /* Scale up and move up */
 }
 
 /*
@@ -906,6 +922,6 @@ button {
 */
 
 .footwrap p {
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1px;
 }
